@@ -1,4 +1,4 @@
-{$DOMAIN_NAME}:443 {
+{
     reverse_proxy h2c://{$SERVICE_URL}:{$SERVICE_PORT} {
         header_up Host {$SERVICE_URL} 
     }
