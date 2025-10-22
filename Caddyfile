@@ -1,7 +1,5 @@
-{
-    reverse_proxy h2c://{$SERVICE_URL}:{$SERVICE_PORT} {
-        header_up Host {$SERVICE_URL} 
-    }
-    
+:{$PORT} {
+    reverse_proxy h2c://{$SERVICE_URL}
+
     log
 }
