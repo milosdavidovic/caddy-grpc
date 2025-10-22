@@ -5,7 +5,3 @@
     
     log
 }
-
-{$DOMAIN_NAME}:80 {
-    redir https://{host}{uri}
-}
